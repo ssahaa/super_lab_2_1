@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин у вас дома</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Main_page.css' %}">
+</head>
+<body>
+    <div class="btn-group" style="width:100%">
+        <li>
+            <form action=/admin>
+                <button style="width:33.3%">Аунтификация</button>
+            </form>
+        </li>
+        <li>
+            <form action=/tovar>
+                <button style="width:33.3%">Товары</button>
+            </form>
+        </li>
+        <li>
+            <form action=/>
+                <button style="width:33.3%">Ваш заказ-</button>
+            </form>
+        </li>
+    </div>
+</body>
+</html>

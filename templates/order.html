@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Заказ {{ data.id }}{% endblock %}
+
+{% block content %}
+    <div class="clss_div_1">Информация о товаре {{ data.product.Name_pos }}</div>
+     <div>{{data.product.inform}}</div>
+    <div>Стоимость {{data.product.price}}</div>
+    <div><img src={{data.product.img}}></div>
+        <form action=/>
+   <button class="classform">На главную страницу</button>
+        </form>
+        <form action=/tovar>
+   <button class="classform">К товарам</button>
+        </form>
+{% endblock %}

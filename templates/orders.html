@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Список заказов{% endblock %}
+
+{% block content %}
+<ul>
+    {% for product in data.product %}
+       {% include 'order_element.html' with elem=product %}
+    {% empty %}
+        <li>Список пуст</li>
+
+    {% endfor %}
+</ul>
+    <form action=/>
+            <button class="classform">На главную страницу</button>
+    </form>
+{% endblock %}
